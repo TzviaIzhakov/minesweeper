@@ -1,0 +1,76 @@
+body {
+  font-size: 20px;
+  text-align: center;
+  background-color: rgb(30, 31, 32);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: azure;
+}
+
+table {
+  border: 1px solid grey;
+  margin: auto;
+}
+td {
+  border: 1px solid grey;
+  font-size: 25px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  background-color: gray;
+  font-weight: 700;
+}
+button {
+  cursor: pointer;
+  margin-bottom: 25px;
+  margin-right: 10px;
+  background-color: rgb(43, 43, 52);
+  color: azure;
+  padding: 10px;
+  font-size: 18px;
+}
+.marked {
+  background: '🚩';
+  background-color: lightpink;
+}
+/* .first-btn {
+  background-color: rgb(132, 132, 163);
+}
+.second--btn {
+  background-color: rgb(132, 132, 163);
+}
+.last--btn {
+} */
+.zero {
+  background-color: lightgray;
+}
+.one {
+  color: blue;
+}
+.two {
+  color: green;
+}
+.third {
+  color: red;
+}
+.light-bulb {
+  background-color: lightgray;
+  width: 50px;
+  height: 50px;
+  margin: auto;
+}
+.reset-game {
+  background: none;
+  padding: 10px;
+  /* border-style: none; */
+  font-size: 18px;
+  margin: 0;
+}
+.timer {
+  border: 1px solid grey;
+  width: 100px;
+  margin: 20px auto;
+  padding: 10px;
+}
+/* .life-left {
+} */

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>minesweeper</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    /> -->
+  </head>
+  <body onload="onInit()">
+    <h1>minesweeper 💣</h1>
+    <p class="life-left">life left: <span></span></p>
+    <button onclick="onInit()" class="reset-game">😀</button>
+    <div class="timer">00:00:00</div>
+    <!-- <div class="light-bulb" onclick="onLight()"></div> -->
+    <div>
+      <button
+        data-life="1"
+        data-level="4"
+        class="first-btn"
+        onclick="revelLevel(this)"
+      >
+        Beginner
+      </button>
+      <button
+        data-life="2"
+        data-level="8"
+        class="second-btn"
+        onclick="revelLevel(this)"
+      >
+        Medium
+      </button>
+      <button
+        data-life="3"
+        data-level="12"
+        class="last-btn"
+        onclick="revelLevel(this)"
+      >
+        Expert
+      </button>
+    </div>
+
+    <table class="minesweeper">
+      <tbody class="minesweeper-cells"></tbody>
+    </table>
+    <script src="js/util.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+  <!-- <footer>Tzvia Izhakov 2023</footer> -->
+</html>
