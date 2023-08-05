@@ -41,6 +41,9 @@ function onInit() {
   const elTimer = document.querySelector('.timer');
   const elResetGameBtn = document.querySelector('.reset-game');
   gElLightBulbBtns = document.querySelectorAll('.light');
+  for (let i = 0; i < gElLightBulbBtns.length; i++) {
+    gElLightBulbBtns[i].style.backgroundColor = `rgb(216, 216, 82)`;
+  }
   gElLightBulbBtns = Array.from(gElLightBulbBtns);
   elTimer.innerText = '00:00:00';
   gLifeLeft = 1;
@@ -76,6 +79,9 @@ function onRevelLevel(elBtn) {
   const elResetGameBtn = document.querySelector('.reset-game');
   elTimer.innerText = '00:00:00';
   gElLightBulbBtns = document.querySelectorAll('.light');
+  for (let i = 0; i < gElLightBulbBtns.length; i++) {
+    gElLightBulbBtns[i].style.backgroundColor = `rgb(216, 216, 82)`;
+  }
   gElLightBulbBtns = Array.from(gElLightBulbBtns);
   elResetGameBtn.innerText = '😀';
   gLifeLeft = +elBtn.dataset.life;
