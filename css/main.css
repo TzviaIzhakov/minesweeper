@@ -29,18 +29,21 @@ button {
   padding: 10px;
   font-size: 18px;
 }
+.light-mode {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-top: 10px;
+  margin-left: 10px;
+  /* background-color: beige; */
+  /* background-color: ; */
+  color: azure;
+  font-weight: 700;
+}
 .marked {
   background: '🚩';
   background-color: lightpink;
 }
-/* .first-btn {
-  background-color: rgb(132, 132, 163);
-}
-.second--btn {
-  background-color: rgb(132, 132, 163);
-}
-.last--btn {
-} */
 .zero {
   background-color: lightgray;
 }
@@ -53,15 +56,26 @@ button {
 .third {
   color: red;
 }
-.light-bulb {
-  background-color: lightgray;
+.wrap-btn-light {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.light-bulb-1,
+.light-bulb-2,
+.light-bulb-3 {
+  background-color: rgb(216, 216, 82);
   width: 50px;
   height: 50px;
-  margin: auto;
+  padding: 5px;
 }
+
 .reset-game {
   background: none;
   padding: 10px;
+  /* background-color: rgb(30, 31, 32) */
   /* border-style: none; */
   font-size: 18px;
   margin: 0;
@@ -71,6 +85,12 @@ button {
   width: 100px;
   margin: 20px auto;
   padding: 10px;
+}
+footer {
+  margin-top: 25px;
+}
+.not-allowed {
+  cursor: not-allowed;
 }
 /* .life-left {
 } */

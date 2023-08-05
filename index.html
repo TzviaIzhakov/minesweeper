@@ -5,23 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>minesweeper</title>
     <link rel="stylesheet" href="css/main.css" />
-    <!-- <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    /> -->
   </head>
   <body onload="onInit()">
+    <button class="light-mode" onclick="onLightMode()">light mode</button>
     <h1>minesweeper 💣</h1>
     <p class="life-left">life left: <span></span></p>
     <button onclick="onInit()" class="reset-game">😀</button>
     <div class="timer">00:00:00</div>
-    <!-- <div class="light-bulb" onclick="onLight()"></div> -->
+    <div class="wrap-btn-light">
+      <img
+        src="img/lightbulb-regular.svg"
+        class="light light-bulb-1"
+        onclick="onLight(this)"
+        data-is-clicked="true"
+      />
+      <img
+        src="img/lightbulb-regular.svg"
+        class="light light-bulb-2"
+        onclick="onLight(this)"
+        data-is-clicked="true"
+      />
+      <img
+        src="img/lightbulb-regular.svg"
+        class="light light-bulb-3"
+        onclick="onLight(this)"
+        data-is-clicked="true"
+      />
+    </div>
+
     <div>
       <button
         data-life="1"
         data-level="4"
         class="first-btn"
-        onclick="revelLevel(this)"
+        onclick="onRevelLevel(this)"
       >
         Beginner
       </button>
@@ -29,7 +46,7 @@
         data-life="2"
         data-level="8"
         class="second-btn"
-        onclick="revelLevel(this)"
+        onclick="onRevelLevel(this)"
       >
         Medium
       </button>
@@ -37,7 +54,7 @@
         data-life="3"
         data-level="12"
         class="last-btn"
-        onclick="revelLevel(this)"
+        onclick="onRevelLevel(this)"
       >
         Expert
       </button>
@@ -49,5 +66,5 @@
     <script src="js/util.js"></script>
     <script src="js/main.js"></script>
   </body>
-  <!-- <footer>Tzvia Izhakov 2023</footer> -->
+  <footer>Tzvia Izhakov 2023</footer>
 </html>

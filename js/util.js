@@ -16,7 +16,7 @@ function renderCell(i, j, value) {
   const cellSelector = '.' + getClassName(i, j);
   const elCell = document.querySelector(cellSelector);
   elCell.innerHTML = value;
-  console.log(elCell);
+  return elCell;
 }
 function getHTMLValue(value) {
   return `<span>${value}</span>`;
@@ -35,10 +35,10 @@ function renderCellNums(i, j, value) {
   const elCell = document.querySelector(cellSelector);
   if (value !== 0) {
     elCell.innerHTML = value;
-    console.log(elCell);
   } else {
     elCell.classList.add('zero');
   }
+  return elCell;
 }
 function getEmptyCell(board, idxRow, idxCol) {
   var emptyCells = [];
